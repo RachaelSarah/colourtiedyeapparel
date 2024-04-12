@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Summer21- Orders</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<header>
+    <h1 style="text-align: center;">Order at Summer21</h1>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contacts</a>
+            <a href="faq.html">FAQ</a>
+                <a href="blog.html">Blog</a>
+                <a href="service.html">Services</a>
+                <a href="login.html">Login</a>
+          </div>
+    </nav>
+</header>
+<main>
+    <section id="order-form">
+        <h2 class="centered">Order Now</h2>
+        <form action="service.php" method="post">
+            <label for="product">Select Product:</label>
+            <select id="product" name="product">
+                <option value="T-shirt">T-Shirt</option>
+                <option value="Hoodie">Hoodie</option>
+                <option value="Pants">Pants</option>
+                <option value="Socks">Socks</option>
+                <option value="Crop Tops">Crop Tops</option>
+                <option value="Bikini">Bikini</option>
+            </select>
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="Extra large">Extra large</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+            <input type="submit" value="Place Order">
+        </form>
+    </section>
+</main>
+</body>
+</html>
